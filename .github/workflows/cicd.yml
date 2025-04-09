@@ -22,7 +22,7 @@ jobs:
     runs-on: aws-ec2
     steps:
       - name: Pull image from docker hub
-        run: docker pull integrationninjas/reactjs-app:latest 
+        run: docker pull taimooranwar/reactjs-app:latest 
       - name: Delete Old Container
         run: docker rm -f reactContainer
       - name: Run docker container

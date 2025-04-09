@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
 
   deploy: 
     needs: build
-    runs-on: self-hosted    
+    runs-on: aws-ec2
     steps:
       - name: Pull image from docker hub
         run: docker pull integrationninjas/reactjs-app:latest 

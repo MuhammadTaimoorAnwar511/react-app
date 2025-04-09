@@ -26,4 +26,4 @@ jobs:
       - name: Delete Old Container
         run: docker rm -f reactContainer
       - name: Run docker container
-        run: docker run -d -p 3000:80 --name reactContainer taimooranwar/reactjs-app   
+        run: docker run -d -p 3000:3000 --name reactContainer taimooranwar/reactjs-app   

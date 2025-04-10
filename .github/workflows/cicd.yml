@@ -22,8 +22,6 @@ jobs:
     runs-on: aws-ec2
     steps:
 
-      - name: Debug error
-        run: echo "build stage first line"
       - name: Pull image from docker hub
         run: docker pull taimooranwar/reactjs-app:latest 
       - name: Delete Old Container

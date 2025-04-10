@@ -22,7 +22,7 @@ jobs:
     runs-on: self-hosted
     steps:
 
-      - name: Debuggin error
+      - name: Debug error
         run: echo "build stage first line"
       - name: Pull image from docker hub
         run: docker pull taimooranwar/reactjs-app:latest 
